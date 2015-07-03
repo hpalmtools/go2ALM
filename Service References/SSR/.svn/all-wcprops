@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/rg0501/hpit116801/!svn/ver/808/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR
+END
+HP.PdeIt.SSR.SSRResult.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/HP.PdeIt.SSR.SSRResult.datasource
+END
+SSR.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/SSR.wsdl
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/rg0501/hpit116801/!svn/ver/808/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/Reference.cs
+END
+Reference.svcmap
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/Reference.svcmap
+END
+configuration91.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/configuration91.svcinfo
+END
+SelfServiceRouter.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/SelfServiceRouter.xsd
+END
+SelfServiceRouter1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/SelfServiceRouter1.xsd
+END
+SelfServiceRouter2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/SelfServiceRouter2.xsd
+END
+SelfServiceRouter3.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/SelfServiceRouter3.xsd
+END
+configuration.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/rg0501/hpit116801/!svn/ver/794/UserTools/trunk/code/Go2ALM/CaliberMigrationTool/Service%20References/SSR/configuration.svcinfo
+END

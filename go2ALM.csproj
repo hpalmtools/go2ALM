@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5D30D67-A6C3-4405-85CB-5AB595168392}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.PdeIt</RootNamespace>
+    <AssemblyName>go2ALM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared Documents\FY12H2 Early Adopters Program\GO2ALM\Caliber Migration Tool\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared Documents\FY12H2 Early Adopters Program\GO2ALM\Caliber Migration Tool\</InstallUrl>
+    <UpdateUrl>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\Caliber Migration Tool\</UpdateUrl>
+    <ProductName>Caliber Migration Tool</ProductName>
+    <PublisherName>Hewlett-Packard</PublisherName>
+    <SuiteName>Go2ALM</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.2.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HP.PdeIt.Go2Alm.CaliberMigrationTool.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0ED8B85B27A78EC5DC26E631931A5153C6FBCF24</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ALMImportTool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CaliberRMSDK100.NET, Version=10.0.345.0, Culture=neutral, PublicKeyToken=157fc4a85357f4d1">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Borland\CaliberRM\CaliberRMSDK100.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\ConfigManager.cs" />
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\AutoUpdate.cs" />
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_CaliberProjectTab_ReqTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_Go2ALM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmLoginTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_CaliberLoginTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView.Designer.cs">
+      <DependentUpon>Go2ALMView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_SetupTracesTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_ToolBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_CaliberProjectTab_Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_CaliberProjectTab_Baselines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_Domains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_Releases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_Folders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView_AlmProjectTab_CustomFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\Mapping\Mapping.cs" />
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\Go2ALMBusinessLogic.cs" />
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\RequirementData.cs" />
+    <Compile Include="Service References\SSR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="src\HP.PdeIt.Go2Alm.CaliberMigrationTool\UI\Go2ALMView.resx">
+      <DependentUpon>Go2ALMView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PPM_IDs.list" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\SSR\HP.PdeIt.SSR.SSRResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSR\SelfServiceRouter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSR\SelfServiceRouter1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSR\SelfServiceRouter2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSR\SelfServiceRouter3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSR\SSR.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OLD_alm_mapping_2012_10_17.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="img\Copy.png" />
+    <Content Include="img\Folder.gif" />
+    <Content Include="img\Help.png" />
+    <Content Include="img\HPLogo.ico" />
+    <Content Include="img\HPLogo.png" />
+    <Content Include="img\Notepad.png" />
+    <Content Include="img\Open_Folder.png" />
+    <Content Include="img\Play.png" />
+    <Content Include="alm_mapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <SplashScreen Include="install_banner.jpg" />
+    <Content Include="lib\CaliberProjects.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\CaliberRMSDK100.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\lm.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\ss.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\st-comutil.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\Tidy.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\vbjorb.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\vbsec.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\xalan.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\xercesImpl.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\CaliberProjects_lib\xmlParserAPIs.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="lib\CaliberRMSDK100.NET.dll" />
+    <None Include="lib\log4net.dll" />
+    <None Include="Service References\SSR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SSR\configuration.svcinfo" />
+    <None Include="Service References\SSR\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SSR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="alm_mapping.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="CaliberRMSDK100.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Prerequisite</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="OLD_alm_mapping_2012_10_17.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="StarTeam">
+      <Guid>{120CB3F6-13C5-11DE-B316-0800209CC2CE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TDAPIOLELib">
+      <Guid>{F645BD06-E1B4-4E6A-82FB-E97D027FD456}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

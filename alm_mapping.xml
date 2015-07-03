@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<alm_mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <system_fields>
+        <field id="rich_text">
+          <alm_field>Rich Text</alm_field>
+        </field>
+        <field id="bp_filter" default-value="HP">
+            <alm_field>BP Filter</alm_field>
+        </field>
+        <field id="requirement_type" requirement-type="BR">
+            <alm_field>Requirement Type</alm_field>
+            <replace_value>
+                <otherwise>4</otherwise>
+                <!--<otherwise>Business</otherwise>-->
+            </replace_value>
+        </field>
+        <field id="requirement_type" requirement-type="UC">
+            <alm_field>Requirement Type</alm_field>
+            <replace_value>
+                <otherwise>101</otherwise>
+                <!--<otherwise>Use Case</otherwise>-->
+            </replace_value>
+        </field>
+        <field id="requirement_type" requirement-type="PR">
+            <alm_field>Requirement Type</alm_field>
+            <replace_value>
+                <otherwise>3</otherwise>
+              <!--<otherwise>Product</otherwise>-->
+            </replace_value>
+        </field>
+        <field id="requirement_type" requirement-type="TR">
+            <alm_field>Requirement Type</alm_field>
+            <replace_value>
+                <otherwise>102</otherwise>
+              <!--<otherwise>Technical</otherwise>-->
+            </replace_value>
+        </field>
+        <field id="requirement_type">
+            <alm_field>Requirement Type</alm_field>
+            <replace_value>
+                <otherwise>0</otherwise>
+            </replace_value>
+        </field>
+        <field id="target_release">
+            <alm_field>Target Release</alm_field>
+        </field>
+        <field id="author">
+            <alm_field>Author</alm_field>
+        </field>
+        <field id="status">
+            <alm_field>Status</alm_field>
+            <replace_value>
+                <when equal="Submitted">1 - Submitted</when>
+                <when equal="Investigating">2 - Under Review</when>
+                <when equal="Approved">3 - Committed</when>
+                <when equal="Committed">3 - Committed</when>
+                <when equal="Deferred">4 - Deferred</when>
+                <when equal="Rejected">5 - Rejected</when>
+                <otherwise>1 - Submitted</otherwise>
+            </replace_value>
+        </field>
+        <field id="priority">
+            <alm_field>Req Priority</alm_field>
+            <replace_value>
+                <when equal="Must">1 - Must</when>
+                <when equal="High Want">2 - High Want</when>
+                <when equal="Want">3 - Want</when>
+                <when equal="Unassigned">Undetermined</when>
+                <otherwise>Undetermined</otherwise>
+            </replace_value>
+        </field>
+        <field id="owner" output-type="email">
+            <alm_field>Owner</alm_field>
+        </field>
+        <field id="legacy_id">
+            <alm_field>Legacy ID</alm_field>
+        </field>
+        <field id="legacy_project">
+            <alm_field>legacy project</alm_field>
+        </field>
+        <field id="comments">
+            <alm_field>Comments</alm_field>
+        </field>
+    </system_fields>
+    <custom_fields>
+        
+        <field>
+            <caliber_field>Reviewed?</caliber_field>
+            <alm_field>Reviewed</alm_field>
+            <replace_value>
+                <when equal="True">Reviewed</when>
+                <otherwise>Not Reviewed</otherwise>
+            </replace_value>
+        </field>
+      
+        <field>
+            <caliber_field>Data flow</caliber_field>
+            <alm_field>Data flow</alm_field>
+        </field>
+        <field>
+            <caliber_field>Exception handling</caliber_field>
+            <alm_field>Exception Handling</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>Functionality</caliber_field>
+            <alm_field>Functionality</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>Impacted product interface</caliber_field>
+            <alm_field>Impacted Product Interface</alm_field>
+        </field>
+        <field requirement-type="TR">
+            <caliber_field>Integration testing</caliber_field>
+            <alm_field>Integration Test</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>Integration testing</caliber_field>
+            <alm_field>Move to Integration Test</alm_field>
+            <replace_value>
+                <when equal="100">Y</when>
+                <otherwise>N</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>IT PR Substatus</caliber_field>
+            <alm_field>PR SubStatus</alm_field>
+            <replace_value>
+                <when equal="Designing">2.05 Designing</when>
+                <when equal="Reviewing">2.10 Reviewing</when>
+                <otherwise>1.05 New</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>IT TR Substatus</caliber_field>
+            <alm_field>TR SubStatus</alm_field>
+            <replace_value>
+                <when equal="PR to TR Mapping">2.05 PR to TR Mapping</when>
+                <when equal="Designing">2.10 Designing</when>
+                <when equal="Reviewing">2.15 Reviewing</when>
+                <otherwise>1.05 New</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>Logging</caliber_field>
+            <alm_field>Logging</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+        <field output-type="email">
+            <caliber_field>Programmer</caliber_field>
+            <alm_field>Programmer</alm_field>
+        </field>
+        <field>
+            <caliber_field>Region</caliber_field>
+            <alm_field>Region</alm_field>
+        </field>
+        <field output-type="email">
+            <caliber_field>Review A</caliber_field>
+            <alm_field>Initial Review</alm_field>
+        </field>
+        <field output-type="email">
+            <caliber_field>Review B</caliber_field>
+            <alm_field>Final Review</alm_field>
+        </field>
+        <field output-type="email">
+            <caliber_field>Reviewed By</caliber_field>
+            <alm_field>Reviewed By</alm_field>
+        </field>
+        <field output-type="email">
+            <caliber_field>Sign off</caliber_field>
+            <alm_field>Sign off</alm_field>
+        </field>
+        <field>
+            <caliber_field>Testcase Status</caliber_field>
+            <alm_field>QA Approved?</alm_field>
+            <replace_value>
+                <when equal="Complete">Y</when>
+                <otherwise>N</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>TR --> Code traceability</caliber_field>
+            <alm_field>TR --> Code traceability</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>UML Status</caliber_field>
+            <alm_field>model Status</alm_field>
+            <replace_value>
+                <when equal="Not Started">1 - Not Started</when>
+                <when equal="WIP">2 - WIP</when>
+                <when equal="Complete">3 - Complete</when>
+            </replace_value>
+        </field>
+        <field>
+            <caliber_field>Unit testing</caliber_field>
+            <alm_field>Unit testing</alm_field>
+            <replace_value>
+                <when equal="0">1 - Not Started</when>
+                <when equal="100">3 - Complete</when>
+                <otherwise>2 - WIP</otherwise>
+            </replace_value>
+        </field>
+      <field requirement-type="TR">
+        <caliber_field>Move to Test</caliber_field>
+        <alm_field>Move to Integration Test</alm_field>
+        <replace_value>
+          <when equal="True">Y</when>
+          <otherwise>N</otherwise>
+        </replace_value>
+      </field>
+
+      <field skip="True">
+        <caliber_field>PPM id</caliber_field>
+        <alm_field>PPM</alm_field>
+      </field>
+      <field skip="True">
+        <caliber_field>product</caliber_field>
+        <alm_field>Product</alm_field>
+      </field>
+      <field skip="True">
+        <caliber_field>Requestor</caliber_field>
+      </field>
+
+      <field requirement-type="UC" skip="True">
+        <caliber_field>Max Effort</caliber_field>
+        <alm_field>Max Effort</alm_field>
+      </field>
+      <field requirement-type="UC" skip="True">
+        <caliber_field>Min Effort</caliber_field>
+        <alm_field>Min Effort</alm_field>
+      </field>
+      
+      <field requirement-type-is-not="UC">
+        <caliber_field>Max Effort</caliber_field>
+        <alm_field>Max Effort</alm_field>
+      </field>
+      <field requirement-type-is-not="UC">
+        <caliber_field>Min Effort</caliber_field>
+        <alm_field>Min Effort</alm_field>
+      </field>
+      
+    </custom_fields>
+  <ui_custom_fields>
+    <!--
+    <field>
+      <alm_list>_SH_PPM</alm_list>
+      <alm_field>PPM ID</alm_field>
+    </field>
+    <field>
+      <alm_list>_SH_Product</alm_list>
+      <alm_field>Product</alm_field>
+    </field>
+    <field>
+      <alm_field>Estimated Hours to Fix</alm_field>
+    </field>
+    <field>
+      <alm_field>Custom 4</alm_field>
+    </field>
+    <field>
+      <alm_field>Custom 5</alm_field>
+    </field>
+      <field>
+        <alm_field>Custom 6</alm_field>
+      </field>
+      <field>
+        <alm_field>Custom 7</alm_field>
+      </field>
+      -->
+  </ui_custom_fields>
+</alm_mapping>

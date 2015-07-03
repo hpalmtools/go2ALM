@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared Documents\FY12H2 Early Adopters Program\GO2ALM\Caliber Migration Tool\|\\teams1.sharepoint.hp.com\DavWWWRoot\teams\QC_documentation\Shared Documents\Tools\Go2ALM\CaliberMigrationTool\|\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\Caliber Migration Tool\|\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\CaliberMigrationTool\|http://ent51.sharepoint.hp.com/teams/ALM-iSVN/Shared Documents/FY12H2 Early Adopters Program/GO2ALM/CaliberMigrationTool/</PublishUrlHistory>
+    <InstallUrlHistory>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared Documents\FY12H2 Early Adopters Program\GO2ALM\Caliber Migration Tool\|\\teams1.sharepoint.hp.com\DavWWWRoot\teams\QC_documentation\Shared Documents\Tools\Go2ALM\CaliberMigrationTool\|\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\Caliber Migration Tool\|\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\CaliberMigrationTool\|http://ent51.sharepoint.hp.com/teams/ALM-iSVN/Shared Documents/FY12H2 Early Adopters Program/GO2ALM/CaliberMigrationTool/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\Caliber Migration Tool\|\\ent51.sharepoint.hp.com\DavWWWRoot\teams\ALM-iSVN\Shared%2520Documents\FY12H2%2520Early%2520Adopters%2520Program\GO2ALM\CaliberMigrationTool\</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+</Project>
